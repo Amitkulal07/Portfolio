@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kulal - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+        }
+        .section-title {
+            font-size: 2.25rem;
+            font-weight: 700;
+            color: #1f2937;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="py-6 px-4 bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold text-gray-800">Amit Kulal</a>
+            <div class="space-x-4">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition-colors">About</a>
+                <a href="#projects" class="text-gray-600 hover:text-blue-600 transition-colors">Projects</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition-colors">Skills</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition-colors">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container space-y-20">
+        <!-- About Section -->
+        <section id="about" class="pt-16 md:pt-24">
+            <div class="card flex flex-col md:flex-row items-center justify-center gap-10 text-center md:text-left">
+                <!-- Replace with your photo -->
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/200x200/4F46E5/ffffff?text=Your+Photo" alt="Your Photo" class="w-48 h-48 rounded-full object-cover border-4 border-indigo-500 shadow-lg">
+                </div>
+                <div>
+                    <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">Hello, I'm Amit Kulal</h1>
+                    <h2 class="text-2xl sm:text-3xl font-semibold text-gray-600 mb-4">Computer Science & Data Science Enthusiast</h2>
+                    <p class="text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto md:mx-0">
+                        As a Computer Science and Engineering Graduate with a strong interest in Data Science and Python, I am passionate about data-driven problem-solving. I enjoy working with machine learning, data analytics, and automation to extract meaningful insights and build efficient, scalable solutions. Driven by a constant thirst for knowledge and growth, I am committed to evolving with the rapidly advancing world of technology.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="pt-16">
+            <h2 class="section-title">My Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project Card 1: IOT Based EV-Vehicle Wireless Charging Station -->
+                <div class="card overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/1F2937/F3F4F6?text=IOT+Project+Image" alt="IOT Based EV-Vehicle Wireless Charging Station" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">IOT Based EV-Vehicle Wireless Charging Station</h3>
+                    <p class="text-gray-600 mb-4">Designed and developed an IoT-enabled wireless charging system for electric vehicles. Integrated real-time monitoring using sensors, microcontrollers, and cloud-based analytics. Implemented automated power management for efficient energy distribution.</p>
+                    <a href="#" class="inline-block bg-indigo-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-indigo-600 transition-colors">View Project</a>
+                </div>
+                <!-- Project Card 2: Expense Tracker -->
+                <div class="card overflow-hidden transition-transform duration-300 hover:scale-105">
+                    <img src="https://placehold.co/600x400/3B82F6/F3F4F6?text=Expense+Tracker+Image" alt="Expense Tracker" class="w-full h-48 object-cover rounded-xl mb-4">
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Expense Tracker</h3>
+                    <p class="text-gray-600 mb-4">Developed a Python-based expense tracker with features to add, edit, delete, and categorize expenses. Used CSV/SQLite for storage, Pandas for analysis, and Matplotlib for visualizations, helping users monitor spending trends and improve financial awareness.</p>
+                    <a href="#" class="inline-block bg-blue-500 text-white font-semibold py-2 px-6 rounded-full hover:bg-blue-600 transition-colors">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="pt-16">
+            <h2 class="section-title">My Skills & Expertise</h2>
+            <div class="card flex flex-wrap justify-center gap-4">
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">Python</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">Numpy</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">Pandas</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">Matplotlib</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">PowerBi</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">SQL</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">HTML</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">CSS</span>
+                <span class="bg-gray-200 text-gray-700 font-semibold py-2 px-4 rounded-full shadow-sm">Figma</span>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="pt-16 pb-20">
+            <h2 class="section-title">Get in Touch</h2>
+            <div class="card max-w-lg mx-auto">
+                <p class="text-center text-gray-600 mb-6">
+                    I'm always open to new opportunities and collaborations. Feel free to reach out!
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                    <a href="mailto:amitkulal07@gmail.com" class="bg-indigo-500 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-indigo-600 transition-colors">Email Me</a>
+                    <a href="https://www.linkedin.com/in/amitkulal" target="_blank" class="bg-blue-600 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-blue-700 transition-colors">LinkedIn</a>
+                    <a href="https://github.com/yourprofile" target="_blank" class="bg-gray-800 text-white font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-gray-900 transition-colors">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="py-6 text-center text-gray-500 bg-white shadow-inner">
+        &copy; 2024 Amit Kulal. All rights reserved.
+    </footer>
+
+</body>
+</html>
